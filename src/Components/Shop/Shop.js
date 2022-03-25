@@ -9,9 +9,9 @@ const Shop = () => {
     const [cart, setCart] = useState([])
 
     const handleAddToCart = (product) => {
-        console.log(product);
-        // const newCart = [...cart, product]
-        // setCart(newCart)
+        // console.log(product);
+        const newCart = [...cart, product]
+        setCart(newCart)
     }
     useEffect(() => {
         fetch('products.json')
@@ -30,8 +30,7 @@ const Shop = () => {
                 }
             </div>
             <div className="cart-container">
-                <Cart>
-
+                <Cart cart={cart}>
                 </Cart>
             </div>
         </div>

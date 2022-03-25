@@ -22,10 +22,14 @@
     width: 100%;
     border-radius: 0 0 10px 10px;
     background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.add-btn p{
-    color: #FFFF;
+.add-btn h4{
+    margin-right: 5px;
 }
 .add-btn:hover{
     background-color: green;
+    color: #FFF;
 }
