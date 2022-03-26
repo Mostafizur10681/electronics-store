@@ -1,14 +1,27 @@
 .blog-container{
     margin-left: 45px;
+    margin-right: 45px;
     margin-bottom: 50px;
+   
 }
 .works{
     border: 1px solid gray;
     border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: rgb(185, 176, 176);
+}
+.propsState{
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(185, 176, 176);
 }
 .blog-container h3{
     font-size: 28px;
     text-align: center;
+    color: green;
+   
 }
 .blog-container p {
     font-size: 18px;

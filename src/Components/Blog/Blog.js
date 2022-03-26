@@ -12,8 +12,8 @@ const Blog = () => {
                     As a result, it will use the virtual representation of the DOM when reading or writing to it.
                     The virtual DOM will then attempt to update the browser's DOM in the most efficient manner possible.</p>
             </div>
-            <div>
-                <h3>Props Vs State</h3>
+            <div className='propsState'>
+                <h3>Difference between Props and State</h3>
                 <p>Props are used to pass data from one component to onother component.
                     On the other hand state is a local data storage, this is local component only.
                     It's can not be pass any component any where. if user interfare website, they can be change anything
