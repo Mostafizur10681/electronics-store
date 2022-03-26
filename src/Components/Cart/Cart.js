@@ -2,17 +2,25 @@
 import Item from '../Item/Item';
 import './Cart.css'
 import swal from 'sweetalert';
+// import { useState } from 'react';
 
 
 const Cart = ({ cart }) => {
 
     const chooseHandleButton = (cart) => {
+        // console.log(cart)
         const randomItem = cart[Math.floor(Math.random() * cart.length)]
         swal("Your random selected product:", randomItem.name);
         if (randomItem) {
             return randomItem;
         }
     }
+
+    const removeHandle = () => {
+        console.log(cart)
+        cart = [];
+    }
+
     return (
         <div className='cart'>
             <h2>Selected Item</h2>
@@ -25,7 +33,7 @@ const Cart = ({ cart }) => {
             <button onClick={() => chooseHandleButton(cart)} className='choose-btn'>
                 <p>CHOOSE 1 FOR ME</p>
             </button>
-            <button className='remove-button'>
+            <button onClick={removeHandle} className='remove-button'>
                 <p>REMOVE ALL</p>
             </button>
         </div>

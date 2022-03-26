@@ -4,7 +4,7 @@ import './Blog.css'
 const Blog = () => {
     return (
         <div className='blog-container'>
-            <div>
+            <div className='works'>
                 <h3>How React Works?</h3>
                 <p>React is a JavaScript library that uses declarative programming to construct efficient user interfaces.
                     Using React, we can create single-page applications and mobile apps.

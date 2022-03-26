@@ -2,6 +2,10 @@
     margin-left: 45px;
     margin-bottom: 50px;
 }
+.works{
+    border: 1px solid gray;
+    border-radius: 10px;
+}
 .blog-container h3{
     font-size: 28px;
     text-align: center;
