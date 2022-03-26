@@ -19,14 +19,22 @@
     background-color: green;
     color: #FFFF;
 }
-.choose-again{
+.remove-button{
     background-color: rgb(185, 176, 176);
     color: red;
     font-weight: 600;
     border-radius: 10px;
     margin-left: 50px;
 }
-.choose-again:hover{
+.remove-button:hover{
     background-color: red;
     color: #FFFF;
+}
+@media only screen and (max-width: 600px){
+    .choose-btn{
+        margin-left: 10px;
+    }
+    .remove-button{
+        margin-left: 10px;
+    }
 }

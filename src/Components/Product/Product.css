@@ -33,3 +33,14 @@
     background-color: green;
     color: #FFF;
 }
+@media only screen and (max-width: 600px){
+    .product{
+        margin-left: 15px;
+    }
+    .product img{
+        width: 245px;
+        border-radius: 10px;
+        height: 245px;
+        margin: 7px;
+    }
+}

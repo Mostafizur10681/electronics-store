@@ -25,7 +25,7 @@ const Cart = ({ cart }) => {
             <button onClick={() => chooseHandleButton(cart)} className='choose-btn'>
                 <p>CHOOSE 1 FOR ME</p>
             </button>
-            <button className='choose-again'>
+            <button className='remove-button'>
                 <p>REMOVE ALL</p>
             </button>
         </div>
