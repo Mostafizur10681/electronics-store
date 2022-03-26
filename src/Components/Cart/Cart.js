@@ -2,6 +2,7 @@
 import Item from '../Item/Item';
 import './Cart.css'
 import swal from 'sweetalert';
+import { useState } from 'react';
 // import { useState } from 'react';
 
 
@@ -17,7 +18,8 @@ const Cart = ({ cart }) => {
     }
 
     const removeHandle = () => {
-        console.log(cart)
+        const remove = document.getElementById('selected-item')
+        remove.innerHTML = '';
         cart = [];
     }
 

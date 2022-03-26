@@ -17,7 +17,7 @@ const Shop = () => {
         fetch('products.json')
             .then(res => res.json())
             .then(data => setProducts(data))
-    }, [])
+    }, []);
     return (
         <div className='shop-container'>
             <div className="products-conatiner">
@@ -30,9 +30,12 @@ const Shop = () => {
                 }
             </div>
             <div className="cart-container">
+
                 <Cart cart={cart}>
                 </Cart>
+
             </div>
+
         </div>
     );
 };
