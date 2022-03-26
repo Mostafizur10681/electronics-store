@@ -1,33 +1,32 @@
-import React, { useState } from 'react';
+
 import Item from '../Item/Item';
 import './Cart.css'
+import swal from 'sweetalert';
+
 
 const Cart = ({ cart }) => {
-    // console.log(cart)
 
-    const [choose, setChoose] = useState([])
-
-    // const chooseHandle = (cart) => {
-    //     const randomItem = cart[Math.floor(Math.random() * choose.length)];
-    //     setChoose(randomItem)
-    //     console.log(randomItem)
-    // }
-
-
+    const chooseHandleButton = (cart) => {
+        const randomItem = cart[Math.floor(Math.random() * cart.length)]
+        swal("Your random selected product:", randomItem.name);
+        if (randomItem) {
+            return randomItem;
+        }
+    }
     return (
         <div className='cart'>
             <h2>Selected Item</h2>
             {
                 cart.map(cart => <Item
                     key={cart.id}
-                    cart={cart.name}
+                    cart={cart}
                 ></Item>)
             }
-            <button className='choose-btn'>
+            <button onClick={() => chooseHandleButton(cart)} className='choose-btn'>
                 <p>CHOOSE 1 FOR ME</p>
             </button>
             <button className='choose-again'>
-                <p>CHOOSE AGAIN</p>
+                <p>REMOVE ALL</p>
             </button>
         </div>
     );
